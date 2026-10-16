@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-10-15T00:00:00Z",
+  "works": [
+    {
+      "id": "dragao-oculto",
+      "title": "A Segunda Vida do Dragão Oculto",
+      "description": "Um homem idoso apaixonado por novels renasce aos quatro anos em um mundo Murim.",
+      "genres": [
+        "Murim",
+        "Reencarnação",
+        "Fantasia",
+        "Artes marciais"
+      ],
+      "chapters": [
+        {
+          "number": 1,
+          "title": "O Despertar",
+          "pages": [
+            "1_kSTnQ5Q3vThPGOo-VsKpENWQRL4Jq1_",
+            "1hUu-H_awQd1e0T_r6b6odxKTRGPXJCdQ",
+            "1xF-rXWFZQkmfILgig5c3Qt96yr0w2Zmp",
+            "1Y3o653OlVrIyrhhYHOO8riAk59YCT-u3",
+            "1Igrfm9TjjWkJTncAHmyIKcWR06lVOraI",
+            "1qBiNgScdd0s5sh5IB3KZLbeHNCnXo_QH",
+            "1Z6C49gyBenSJl5U9Q52DBozfsuF39vUV",
+            "1Wvdm08jhH8OUcmzuwmfHA0dLiFUveaaI"
+          ]
+        }
+      ]
+    }
+  ]
+}
