@@ -1,0 +1,25 @@
+name: Atualizar catálogo do Drive
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ler pastas públicas
+        env:
+          DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}
+        run: python3 scripts/sync_drive.py
+      - name: Publicar catálogo atualizado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: atualizar catálogo do Drive"
+            git push
+          fi
