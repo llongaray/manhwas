@@ -1,7 +1,5 @@
 name: Atualizar catálogo do Drive
 on:
-  schedule:
-    - cron: '17 */6 * * *'
   workflow_dispatch:
 permissions:
   contents: write
